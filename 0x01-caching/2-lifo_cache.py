@@ -3,8 +3,8 @@
 """
 
 from base_caching import BaseCaching
-
 from collections import OrderedDict
+
 
 class LIFOCache(BaseCaching):
     """ Process thst allows to add and remove
@@ -31,7 +31,7 @@ class LIFOCache(BaseCaching):
         self.cache_data.move_to_end(key, last=True)
 
     def get(self, key):
-        """ Get's an item linked to 
-            the key from the dictionary
-        """
+        """ get item in the cach
+            with the key value
+            """
         return self.cache_data.get(key, None)

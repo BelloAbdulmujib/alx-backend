@@ -5,6 +5,7 @@
 from base_caching import BaseCaching
 from collections import OrderedDict
 
+
 class FIFOCache(BaseCaching):
     """ Process thst allows to add and remove
         items from the cach using FIFO
@@ -28,7 +29,7 @@ class FIFOCache(BaseCaching):
             print("DISCARD:", initial_key)
 
     def get(self, key):
-        """ Get's an item linked to 
-            the key from the dictionary
+        """ get item in the cach
+            with the key value
         """
         return self.cache_data.get(key, None)

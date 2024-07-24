@@ -3,6 +3,7 @@
 
 from base_caching import BaseCaching
 
+
 class BasicCache(BaseCaching):
     """ Caching system's class
     """
@@ -22,5 +23,6 @@ class BasicCache(BaseCaching):
     def get(self, key):
         """ Retrieves an item linked to the key
         """
-        #if key is None or key not in self.cache_data:
+
+        # if key is None or key not in self.cache_data:
         return self.cache_data.get(key, None)
