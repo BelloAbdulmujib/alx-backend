@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Using babel to configure available langs
 """
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
